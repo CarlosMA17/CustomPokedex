@@ -54,12 +54,13 @@ public class Pokemon {
 
     @Override
     public String toString() {
-        return "pokemon{" +
-                "nombre='" + nombre + '\'' +
-                ", tipo='" + tipo + '\'' +
-                ", altura=" + altura +
-                ", peso=" + peso +
-                ", descripcion='" + descripcion + '\'' +
-                '}';
+        return  "|---------------------------|\n|\t\t\t\t" +
+                nombre + "\t\t|\n" +
+                "|\t\t\t\t" + tipo + "\t\t|\n" +
+                "|\t\t\t\tHT\t" + altura + "\t\t|\n" +
+                "|\t\t\t\tWT\t" + peso + "\t\t|\n" +
+                "|-[]-[]-[]-[]---[]-[]-[]-[]-|\n" +
+                descripcion +
+                "\n|---------------------------|";
     }
 }
