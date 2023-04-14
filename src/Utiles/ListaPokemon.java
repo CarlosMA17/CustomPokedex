@@ -1,14 +1,10 @@
 package Utiles;
-
 import pokemons.Pokemon;
 
 public class ListaPokemon {
-    private Pokemon listaPokemon[];
+    private Pokemon[] listaPokemon = new Pokemon[1];
 
     public ListaPokemon() {
-    }
-
-    public ListaPokemon(Pokemon listaPokemon) {
     }
 
     public void añadirPokemon(Pokemon pokemon) {
