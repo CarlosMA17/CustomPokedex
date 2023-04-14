@@ -20,24 +20,45 @@ public class Pokemon {
         this.tipo = tipo;
     }
 
+
     public String getNombre() {
-        return nombre;
+        if (nombre == null) {
+            return "????";
+        } else {
+            return nombre;
+        }
     }
 
     public String getTipo() {
-        return tipo;
+        if (tipo == null) {
+            return "????";
+        } else {
+            return tipo;
+        }
     }
 
     public float getAltura() {
-        return altura;
+        if (altura == 0f) {
+            return 0000f;
+        } else {
+            return altura;
+        }
     }
 
     public float getPeso() {
-        return peso;
+        if (peso == 0f) {
+            return 0000f;
+        } else {
+            return peso;
+        }
     }
 
     public String getDescripcion() {
-        return descripcion;
+        if (descripcion == null) {
+            return "????";
+        } else {
+            return descripcion;
+        }
     }
 
     public void setAltura(float altura) {
@@ -55,12 +76,12 @@ public class Pokemon {
     @Override
     public String toString() {
         return  "|---------------------------|\n|\t\t\t\t" +
-                nombre + "\t\t|\n" +
-                "|\t\t\t\t" + tipo + "\t\t|\n" +
-                "|\t\t\t\tHT\t" + altura + "\t\t|\n" +
-                "|\t\t\t\tWT\t" + peso + "\t\t|\n" +
+                this.getNombre() + "\t\t|\n" +
+                "|\t\t\t\t" + this.getTipo() + "\t\t|\n" +
+                "|\t\t\t\tHT\t" + this.getAltura() + "\t\t|\n" +
+                "|\t\t\t\tWT\t" + this.getPeso() + "\t\t|\n" +
                 "|-[]-[]-[]-[]---[]-[]-[]-[]-|\n" +
-                descripcion +
+                this.getDescripcion() +
                 "\n|---------------------------|";
     }
 }
