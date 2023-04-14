@@ -8,6 +8,10 @@ public class PokemonLegendario extends Pokemon{
         this.localizacion = localizacion;
     }
 
+    public PokemonLegendario(String nombre, String tipo) {
+        super(nombre, tipo);
+    }
+
     public String getLocalizacion() {
         return localizacion;
     }
