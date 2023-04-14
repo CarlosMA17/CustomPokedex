@@ -1,3 +1,4 @@
+import Utiles.ListaPokemon;
 import pokemons.Pokemon;
 import pokemons.PokemonLegendario;
 
@@ -8,5 +9,9 @@ public class Main {
                 " dummy text of the printing\n and typesetting industry.\n Lorem Ipsum has been\n" +
                 " the industry's standard dummy\n text ever since the 1500s ", "en el rio");
         System.out.println(pokemon);
+
+        ListaPokemon lista = new ListaPokemon();
+        lista.añadirPokemon(pokemon);
+        System.out.println(lista);
     }
 }
