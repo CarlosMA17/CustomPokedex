@@ -16,7 +16,7 @@ public class Main {
         ListaPokemon lista = new ListaPokemon();
         lista.addPokemon(pokemon);
         lista.addPokemon(pokemon2);
-        System.out.println(lista.listaPokemon[0] + "\n\n");
-        System.out.println(lista.listaPokemon[1]);
+        lista.eliminarPokemon();
+
     }
 }
