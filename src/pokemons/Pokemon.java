@@ -76,7 +76,7 @@ public class Pokemon {
     @Override
     public String toString() {
         return  "|---------------------------|\n|\t\t\t\t" +
-                this.getNombre() + "\t\t|\n" +
+                this.getNombre() + "\t|\n" +
                 "|\t\t\t\t" + this.getTipo() + "\t\t|\n" +
                 "|\t\t\t\tHT\t" + this.getAltura() + "\t\t|\n" +
                 "|\t\t\t\tWT\t" + this.getPeso() + "\t\t|\n" +

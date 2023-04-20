@@ -2,16 +2,24 @@ package Utiles;
 import pokemons.Pokemon;
 
 public class ListaPokemon {
-    private Pokemon[] listaPokemon = new Pokemon[1];
+    public Pokemon[] listaPokemon = new Pokemon[1];
 
     public ListaPokemon() {
     }
 
-    public void añadirPokemon(Pokemon pokemon) {
+    public void addPokemon(Pokemon pokemon) {
+        Pokemon[] listaPokemonNueva = new Pokemon[listaPokemon.length + 1];
         for (int i = 0; i < listaPokemon.length; i++) {
-            if (listaPokemon[i] == null) {
-                listaPokemon[i] = pokemon;
+            listaPokemonNueva[i] = listaPokemon[i];
+        }
+        for (int i = 0; i < listaPokemonNueva.length; i++) {
+            if (listaPokemonNueva[i] == null) {
+                listaPokemonNueva[i] = pokemon;
+                i = listaPokemonNueva.length;
             }
         }
+        this.listaPokemon = listaPokemonNueva;
+
     }
+
 }
