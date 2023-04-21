@@ -25,18 +25,19 @@ public class Main {
 
         listaAvistados.addPokemon(pokemonPrueba);
         listaCapturados.addPokemon(pokemon2Prueba);
-
-        System.out.println("elija una opcion");
-        System.out.println("        a Añadir un pokemon avistado \n" +
-                "        b Añadir avistamiento \n" +
-                "        c Pasar a capturados\n" +
-                "        d Mostrar lista de avistados \n" +
-                "        e Mostrar lista de capturados \n" +
-                "        f Cerrar la pokedex ");
-        String opcion = sc.nextLine();
         boolean salir = false;
+        while (!salir) {
+            System.out.println("elija una opcion");
+            System.out.println("        a Añadir un pokemon avistado \n" +
+                    "        b Añadir avistamiento \n" +
+                    "        c Pasar a capturados\n" +
+                    "        d Mostrar lista de avistados \n" +
+                    "        e Mostrar lista de capturados \n" +
+                    "        f Cerrar la pokedex ");
+            String opcion = scString.nextLine();
 
-        while (salir) {
+
+
             switch (opcion) {
                 case "a":
                     Pokemon pokemon = new Pokemon();
@@ -70,7 +71,7 @@ public class Main {
                     nombre = scString.nextLine();
                     System.out.println("introduce el tipo");
                     tipo = scString.nextLine();
-                    ;
+
                     System.out.println("introduce la estatura");
                     altura = sc.nextInt();
                     System.out.println("introduce el peso");
