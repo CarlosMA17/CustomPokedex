@@ -1,7 +1,6 @@
 package Utiles;
 import pokemons.Pokemon;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ListaPokemon {
@@ -50,6 +49,14 @@ public class ListaPokemon {
     public void mostrarPokemons() {
         for (int i = 0; i < listaPokemon.length; i++) {
             System.out.println(listaPokemon[i]);
+        }
+    }
+
+    public Pokemon selectorPokemon(int posicionPokemon) {
+        if (this.listaPokemon[posicionPokemon] == null) {
+            return null;
+        } else {
+            return this.listaPokemon[posicionPokemon];
         }
     }
 }
