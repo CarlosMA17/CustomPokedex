@@ -21,6 +21,7 @@ public class ListaPokemon {
             }
         }
         this.listaPokemon = listaPokemonNueva;
+        System.out.println("pokemon añadido");
         for (int i = 0; i < listaPokemon.length; i++) {
             System.out.println(listaPokemon[i]);
         }
@@ -41,18 +42,21 @@ public class ListaPokemon {
                 this.listaPokemon = listaPokemonNueva;
             }
         }
+        System.out.println("la lista de pokemon quedo asi: ");
         for (int i = 0; i < this.listaPokemon.length; i++) {
             System.out.println(i + "-\n" + this.listaPokemon[i]);
         }
     }
 
     public void mostrarPokemons() {
+        System.out.println("mostrando pokemons...");
         for (int i = 0; i < listaPokemon.length; i++) {
             System.out.println(listaPokemon[i]);
         }
     }
 
     public Pokemon selectorPokemon(int posicionPokemon) {
+        System.out.println("mostrando el pokemon " + i);
         if (posicionPokemon >= this.listaPokemon.length) {
             return null;
         } else {
