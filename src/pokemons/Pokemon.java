@@ -20,6 +20,8 @@ public class Pokemon {
         this.tipo = tipo;
     }
 
+    public Pokemon() {
+    }
 
     public String getNombre() {
         if (nombre == null) {

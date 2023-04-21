@@ -27,11 +27,7 @@ public class ListaPokemon {
         }
     }
 
-    public void eliminarPokemon() {
-        System.out.println("inttoduce el nombre del pokemon a eliminar:");
-        Scanner sc = new Scanner(System.in);
-        String nombrePokemon = sc.nextLine();
-
+    public void eliminarPokemon(String nombrePokemon) {
         for (int i = 0; i < this.listaPokemon.length; i++) {
             if (listaPokemon[i].getNombre().equals(nombrePokemon)) {
                 listaPokemon[i] = null;
@@ -56,8 +52,8 @@ public class ListaPokemon {
     }
 
     public Pokemon selectorPokemon(int posicionPokemon) {
-        System.out.println("mostrando el pokemon " + i);
-        if (posicionPokemon >= this.listaPokemon.length) {
+        System.out.println("mostrando el pokemon " + posicionPokemon);
+        if (posicionPokemon > this.listaPokemon.length) {
             return null;
         } else {
             return this.listaPokemon[posicionPokemon];
