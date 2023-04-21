@@ -43,7 +43,13 @@ public class ListaPokemon {
             }
         }
         for (int i = 0; i < this.listaPokemon.length; i++) {
-            System.out.println(this.listaPokemon[i]);
+            System.out.println(i + "-\n" + this.listaPokemon[i]);
+        }
+    }
+
+    public void mostrarPokemons() {
+        for (int i = 0; i < listaPokemon.length; i++) {
+            System.out.println(listaPokemon[i]);
         }
     }
 }
