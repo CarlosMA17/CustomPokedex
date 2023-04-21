@@ -17,6 +17,5 @@ public class Main {
         lista.addPokemon(pokemon);
         lista.addPokemon(pokemon2);
         lista.eliminarPokemon();
-
     }
 }
