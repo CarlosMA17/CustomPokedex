@@ -53,7 +53,7 @@ public class ListaPokemon {
     }
 
     public Pokemon selectorPokemon(int posicionPokemon) {
-        if (this.listaPokemon[posicionPokemon] == null) {
+        if (posicionPokemon >= this.listaPokemon.length) {
             return null;
         } else {
             return this.listaPokemon[posicionPokemon];

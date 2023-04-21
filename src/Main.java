@@ -18,5 +18,6 @@ public class Main {
         lista.addPokemon(pokemon2);
         lista.eliminarPokemon();
         lista.mostrarPokemons();
+        lista.selectorPokemon(1);
     }
 }
